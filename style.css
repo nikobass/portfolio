@@ -2,7 +2,7 @@ body {
 	background: #282931;
 	-webkit-font-smoothing: antialiased;
 	font-family: "Varela Round", sans-serif;
-	height: 100%;
+	height: 100%;	
 }
 
 canvas {
@@ -15,7 +15,32 @@ canvas {
 .logo {
 	font-family: "Monoton", cursive;
 	color: white;
-	font-size: 8rem;
+	font-size: 5rem;
+	margin-bottom: 1.3rem;
+}
+
+h1 {
+	color: #fc3565;
+	font-size: 2.5rem;
+    line-height: 1.2;
+    letter-spacing: -.1rem;
+}
+
+h2, h3 {
+	color: #fff;
+    font-weight: 700;
+}
+
+h2 {	
+	font-size: 2rem;
+	font-weight: bold;
+	margin-top: 0.5rem;
+}
+
+h3 {
+	font-size: 1rem;
+	font-weight: bold;
+	margin-top: 1rem;
 }
 
 a {
@@ -32,27 +57,21 @@ a:hover {
 	color: #fc3565;
 }
 
-h1 {
-	color: #fc3565;
-	padding-bottom: 0px;
-	margin-bottom: 1%;
+p {
+	color: #e6e6e6;
+    margin: 0.8rem 0;
+    line-height: 1.6;
 }
 
-h2 {
-	color: white;
-	font-size: 3rem;
-	font-weight: bold;
-	margin: 0px;
-	padding: 0px;
+.container {
+	padding-top: 1.5rem;
+	display: flex;
+	justify-content: center;
+	width: 40%;
+	margin: 0 auto;
 }
 
-h3 {
-	color: white;
-	font-size: 1rem;
-	font-weight: bold;
-	margin: 0px;
-	padding: 0px;
-}
+
 
 /* Mobile first queries */
 
@@ -63,7 +82,18 @@ h3 {
 
 /* Larger than phablet */
 
-@media (min-width: 550px) {
+@media (max-width: 550px) {
+	h1 {
+	 font-size: 2rem;
+		}
+	h2 {
+		font-size: 1.5rem;
+	}
+		.container {
+			width: 90%;			
+			margin: 0 auto;
+			padding: 1rem;
+		}
 }
 
 /* Larger than tablet */
@@ -80,7 +110,7 @@ h3 {
 
 @media (min-width: 1200px) {
 h1 {
-font-size: 4rem;
+font-size: 2.8rem;
 }
 }
   
