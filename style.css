@@ -150,6 +150,10 @@ footer a:hover {
 	filter: invert(30%) sepia(20%) saturate(6759%) hue-rotate(323deg) brightness(105%) contrast(98%);
   }
 
+  .filter-color:hover::after {
+	filter: invert(43%) sepia(8%) saturate(109%) hue-rotate(201deg) brightness(91%) contrast(82%);
+  }
+
   #toTop {
 	transition: all 0.5s ease 0s;
 	-moz-transition: all 0.5s ease 0s;
