@@ -140,19 +140,11 @@ footer a:hover {
 #toTop {
 	display: block;
 	position: fixed;
-	bottom: 20px;
-	right: 20px;
+	bottom: 42px;
+	right: 15px;
 	font-size: 48px;
 	
-  }
-  
-  .filter-color:hover {
-	filter: invert(30%) sepia(20%) saturate(6759%) hue-rotate(323deg) brightness(105%) contrast(98%);
-  }
-
-  .filter-color:hover::after {
-	filter: invert(43%) sepia(8%) saturate(109%) hue-rotate(201deg) brightness(91%) contrast(82%);
-  }
+  } 
 
   #toTop {
 	transition: all 0.5s ease 0s;
@@ -174,7 +166,9 @@ footer a:hover {
 /* Larger than mobile */
 
 @media (min-width: 551px) {
-
+	.filter-color:hover {
+		filter: invert(30%) sepia(20%) saturate(6759%) hue-rotate(323deg) brightness(105%) contrast(98%);
+	  }
 }
 
 /* Larger than phablet */
