@@ -136,11 +136,41 @@ footer li {
 footer a:hover {
 	color:  #fc3565;
 }
+
+#toTop {
+	display: block;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 48px;
+	
+  }
+  
+  .filter-color:hover {
+	filter: invert(30%) sepia(20%) saturate(6759%) hue-rotate(323deg) brightness(105%) contrast(98%);
+  }
+
+  #toTop {
+	transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	opacity: 0.5;
+	display: none;
+	cursor: pointer;
+  }
+  
+  #toTop:hover {
+	opacity: 1;
+  }
+	
+
 /* Mobile first queries */
 
 /* Larger than mobile */
 
-@media (min-width: 400px) {
+@media (min-width: 551px) {
+
 }
 
 /* Larger than phablet */
@@ -166,6 +196,11 @@ footer a:hover {
 		.content__details__text {
 			width: 100%;
 		}
+
+		.logo--footer {
+			position: relative;
+		}
+
 }
 
 /* Larger than tablet */
