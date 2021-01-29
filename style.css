@@ -38,7 +38,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1rem;
+	font-size: 1.5rem;
 	font-weight: bold;
 	margin-top: 1rem;
 }
@@ -67,8 +67,9 @@ p {
 	padding-top: 1.5rem;
 	display: flex;
 	justify-content: center;
-	width: 40%;
+	width: 60%;
 	margin: 0 auto;
+	padding-bottom: 3rem;
 }
 
 .button {
@@ -91,7 +92,49 @@ p {
     text-transform: uppercase!important;
     white-space: nowrap!important;
     margin-bottom: 2rem!important;
+}
 
+.content__details {
+	display: flex;
+	justify-content: space-between;
+}
+
+.content__details__text {
+	width: 30%;
+}
+
+
+
+.footer {
+	justify-content: center;
+	width: 40%;
+	margin: 0 auto;	
+}
+
+
+.logo--footer {
+	font-family: "Monoton", cursive;
+	color: white;
+	font-size: 2rem;
+	margin-bottom: 1.3rem;
+	display: flex;
+	justify-content: center;
+	padding-top: 2rem;
+}
+
+footer ul {
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+
+footer li {
+	margin-right: 2rem;
+	margin-bottom: 2rem;
+}
+
+footer a:hover {
+	color:  #fc3565;
 }
 /* Mobile first queries */
 
@@ -113,6 +156,15 @@ p {
 			width: 90%;			
 			margin: 0 auto;
 			padding: 1rem;
+		}
+		footer ul {
+		margin-left: 2rem;
+		}
+		.content__details {
+			display: inline-block;			
+		}
+		.content__details__text {
+			width: 100%;
 		}
 }
 
