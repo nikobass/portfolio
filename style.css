@@ -5,20 +5,10 @@ body {
 	height: 100%;	
 }
 
-.centerBox{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 250px;
-}
-
 .categoryWrapper{
-	height: 220px;
+
 	padding-bottom: 1rem;
-	width: 460px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: 15rem;
 	position: relative;
 }
 
@@ -57,8 +47,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', end
 	position: absolute;
 	transform: translatey(60px);
 	-webkit-appearance: none;
-	top: 59px;
-	left: 78px;
+	top: 40px;
+	left: 39px;
 	border: none;
 	background: none;
 	color:white;
@@ -296,11 +286,11 @@ p {
 }
 
 .content__details__text {
-	width: 30%;
+	width: 28%;
 }
 
 .content__details__imgProjects {
-	width: 25rem;
+	width: 20rem;
 	padding-top: 1rem;
 	opacity: 0.5;
 }
@@ -403,8 +393,11 @@ footer a:hover {
 		}
 		.content__details__text {
 			width: 100%;
+			padding-bottom: 2rem;
 		}
-
+		.devicon-devicon-plain {
+			max-width: 2.3em;			
+		  }
 		.logo--footer {
 			position: relative;
 		}
@@ -417,7 +410,14 @@ footer a:hover {
 
 /* Larger than tablet */
 
-@media (min-width: 750px) {
+@media (min-width: 750px) and (max-width: 2000px) {
+	.content__details {
+		display: inline-block;			
+	}
+	.content__details__text {
+		width: 100%;
+		padding-bottom: 2rem;
+	}
 }
 
 /* Larger than desktop */
